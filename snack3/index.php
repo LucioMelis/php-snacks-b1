@@ -13,4 +13,6 @@ echo('<pre>');
 var_dump($arrayNumeri);
 echo('</pre>');
 ?>
+<!-- Soluzione While
+while(count($arrayNumeri) < 15) -->
 
