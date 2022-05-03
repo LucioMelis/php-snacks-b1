@@ -17,5 +17,5 @@ if(strlen($richiestaNome) > 3 && filter_var($richiestaMail, FILTER_VALIDATE_EMAI
     echo('<h2>'.'Accesso negato'.'</h2>');
 }
 ?>
-
+<!-- Soluzione Iniziale per la validità della mail  -->
 <!-- strpos($richiestaMail, '@') && strpos($richiestaMail, '.') -->
