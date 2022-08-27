@@ -10,4 +10,21 @@ foreach($animals as $animalClass){
         echo (' ' . $animal);
     }
 }
+
+$animals['mammals'][] = 'lion';
+$animals['person'] =['Ciro','Siox'];
+
+var_dump($animals);
+
+
+$prova1 = 'Ivan';
+$prova2 = 'Paolo';
+
+ function laMiaFunzione($saluto, $bacio){
+    echo $prova1; /*variabile non valida */
+    echo $saluto;
+    echo $bacio;
+ }
+
+laMiaFunzione($prova1, $prova2);
 ?>
