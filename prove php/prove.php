@@ -20,11 +20,15 @@ var_dump($animals);
 $prova1 = 'Ivan';
 $prova2 = 'Paolo';
 
- function laMiaFunzione($saluto, $bacio){
-    echo $prova1; /*variabile non valida */
-    echo $saluto;
-    echo $bacio;
+// come cambiare il valore di una variabile all'interno di una funzione
+// facendo attenzione allo scoped
+
+ function laMiaFunzione($prova1){
+    $prova1 = 'Ivan Zazzaroni';
+    return $prova1;
  }
 
-laMiaFunzione($prova1, $prova2);
+$soluzione = laMiaFunzione($prova1);
+
+echo $soluzione;
 ?>
